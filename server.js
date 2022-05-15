@@ -36,9 +36,6 @@ connectio.once("open",()=>{
     console.log("mongoDB connection successful !!!");
 })
 
-const orderRouter = require("./routes/orders.js");
-app.use("/order",orderRouter);
-
 const paymentRouter = require("./routes/payments.js");
 app.use("/payment",paymentRouter);
 
